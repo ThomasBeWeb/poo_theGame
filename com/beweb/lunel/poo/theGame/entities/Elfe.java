@@ -19,7 +19,7 @@ public class Elfe extends Personnage {
     }
     
     @Override
-    protected void initAttributs() {
+    public void initAttributs() {
         this.force = 4;
         this.pv = 80;
         this.endurance = 1;     

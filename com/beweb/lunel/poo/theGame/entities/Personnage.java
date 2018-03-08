@@ -4,11 +4,15 @@
  * and open the template in the editor.
  */
 package beweb.lunel.poo.theGame.entities;
+
+import beweb.lunel.poo.theGame.entities.interfaces.ActionInterface;
+import beweb.lunel.poo.theGame.entities.interfaces.Initialisable;
+
 /**
  *
  * @author cantinelli
  */
-abstract public class Personnage {
+abstract public class Personnage implements Initialisable,ActionInterface {
             
     int force;
     int pv;
@@ -24,8 +28,8 @@ abstract public class Personnage {
         this.nom = nom;
     }
     
-    abstract protected void initAttributs();
     
+    @Override
     public void attaquer(Personnage cible){
         
         String message;

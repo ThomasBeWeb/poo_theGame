@@ -20,7 +20,7 @@ public class Humain extends Personnage {
     }
 
     @Override
-    protected void initAttributs() {
+    public void initAttributs() {
         this.force = 5;
         this.pv = 72;
         this.endurance = 3;  
